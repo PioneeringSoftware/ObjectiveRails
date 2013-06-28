@@ -1,0 +1,9 @@
+[submodule "ActiveSupport"]
+	path = ActiveSupport
+	url = git://github.com/PioneeringSoftware/ActiveSupport.git
+[submodule "ActiveModel"]
+	path = ActiveModel
+	url = git://github.com/PioneeringSoftware/ActiveModel.git
+[submodule "ActiveResource"]
+	path = ActiveResource
+	url = git://github.com/PioneeringSoftware/ActiveResource.git
