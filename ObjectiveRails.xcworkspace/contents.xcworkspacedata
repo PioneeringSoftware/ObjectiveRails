@@ -8,6 +8,9 @@
       location = "group:MIT-LICENSE.txt">
    </FileRef>
    <FileRef
+      location = "group:Versioning.xcconfig">
+   </FileRef>
+   <FileRef
       location = "group:ObjectiveRailsLib.xcodeproj">
    </FileRef>
    <FileRef

@@ -107,6 +107,7 @@
 		782B15E6144C88750016B106 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		782B15E8144C88750016B106 /* ObjectiveRailsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveRailsTests.h; sourceTree = "<group>"; };
 		782B15E9144C88750016B106 /* ObjectiveRailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveRailsTests.m; sourceTree = "<group>"; };
+		788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ObjectiveRails.xcconfig; sourceTree = "<group>"; };
 		7895315A1738E6B3006C30A4 /* libObjectiveRails.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveRails.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7895315B1738E6B3006C30A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		789531691738E6B4006C30A4 /* ObjectiveRailsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveRailsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,7 @@
 				782B15D2144C88750016B106 /* ObjectiveRails-Prefix.pch */,
 				78E75970144C8BF200F6B5A0 /* Versioning.h */,
 				78E75971144C8BF200F6B5A0 /* Versioning.m */,
+				788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -484,6 +486,7 @@
 /* Begin XCBuildConfiguration section */
 		782B15EB144C88750016B106 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -492,7 +495,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 82.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -511,13 +513,12 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = k;
 			};
 			name = Debug;
 		};
 		782B15EC144C88750016B106 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -526,7 +527,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 82.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -538,8 +538,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = k;
 			};
 			name = Release;
 		};
