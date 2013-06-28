@@ -1,4 +1,4 @@
-// ObjectiveRailsKitTests ObjectiveRailsKitTests.m
+// ObjectiveRailsTests ObjectiveRailsTests.h
 //
 // Copyright © 2011–2013, Roy Ratcliffe, Pioneering Software, United Kingdom
 //
@@ -22,21 +22,8 @@
 //
 //------------------------------------------------------------------------------
 
-#import "ObjectiveRailsKitTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 
-#import <ObjectiveRailsKit/ObjectiveRailsKit.h>
-
-@implementation ObjectiveRailsKitTests
-
-- (void)testVersioning
-{
-	// Just assert that the version strings exist. This primarily tests linking
-	// against sub-frameworks within the umbrella framework, RailsKit. If all
-	// resolve at link-time then the sub-frameworks link successfully. These
-	// test should only fail therefore when the linker fails.
-	STAssertNotNil(ActiveResourceKitVersionString(), nil);
-	STAssertNotNil(ActiveModelKitVersionString(), nil);
-	STAssertNotNil(ActiveSupportKitVersionString(), nil);
-}
+@interface ObjectiveRailsTests : SenTestCase
 
 @end

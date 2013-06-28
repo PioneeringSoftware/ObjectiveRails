@@ -1,4 +1,4 @@
-/* ObjectiveRailsKit Versioning.m
+/* ObjectiveRails ObjectiveRails.h
  *
  * Copyright © 2011–2013, Roy Ratcliffe, Pioneering Software, United Kingdom
  *
@@ -22,17 +22,6 @@
  *
  ******************************************************************************/
 
-#import "Versioning.h"
-
-NSString *ObjectiveRailsKitVersionString()
-{
-	static NSString *versionString;
-	if (versionString == nil)
-	{
-		versionString = [[NSString stringWithCString:(const char *)kObjectiveRailsKitVersionString encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		atexit_b(^(void) {
-			versionString = nil;
-		});
-	}
-	return versionString;
-}
+#import <ActiveResource/ActiveResource.h>
+#import <ActiveModel/ActiveModel.h>
+#import <ActiveSupport/ActiveSupport.h>

@@ -1,4 +1,4 @@
-/* ObjectiveRailsKit ObjectiveRailsKit.h
+/* ObjectiveRails Versioning.h
  *
  * Copyright © 2011–2013, Roy Ratcliffe, Pioneering Software, United Kingdom
  *
@@ -22,6 +22,9 @@
  *
  ******************************************************************************/
 
-#import <ActiveResourceKit/ActiveResourceKit.h>
-#import <ActiveModelKit/ActiveModelKit.h>
-#import <ActiveSupportKit/ActiveSupportKit.h>
+#import <Foundation/Foundation.h>
+
+extern const unsigned char kObjectiveRailsVersionString[];
+extern const double kObjectiveRailsVersionNumber;
+
+NSString *ObjectiveRailsVersionString(void);
