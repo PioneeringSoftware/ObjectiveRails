@@ -107,6 +107,7 @@
 		782B15E6144C88750016B106 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		782B15E8144C88750016B106 /* ObjectiveRailsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveRailsTests.h; sourceTree = "<group>"; };
 		782B15E9144C88750016B106 /* ObjectiveRailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveRailsTests.m; sourceTree = "<group>"; };
+		788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ObjectiveRails.xcconfig; sourceTree = "<group>"; };
 		7895315A1738E6B3006C30A4 /* libObjectiveRails.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveRails.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7895315B1738E6B3006C30A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		789531691738E6B4006C30A4 /* ObjectiveRailsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveRailsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,7 @@
 				782B15D2144C88750016B106 /* ObjectiveRails-Prefix.pch */,
 				78E75970144C8BF200F6B5A0 /* Versioning.h */,
 				78E75971144C8BF200F6B5A0 /* Versioning.m */,
+				788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -484,6 +486,7 @@
 /* Begin XCBuildConfiguration section */
 		782B15EB144C88750016B106 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -518,6 +521,7 @@
 		};
 		782B15EC144C88750016B106 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788032FE177DEEFA007A3FA1 /* ObjectiveRails.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
